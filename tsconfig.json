@@ -3,10 +3,12 @@
     "outDir": "./build/",
     "noImplicitAny": true,
     "module": "CommonJS",
-    "target": "es5",
+    "target": "esnext",
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node"
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }

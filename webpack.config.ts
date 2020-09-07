@@ -11,17 +11,17 @@ const config: webpack.Configuration[] = [
         {
           test: /\.ts?$/,
           use: 'ts-loader',
-          exclude: /node_modules/
-        }
-      ]
+          exclude: /node_modules/,
+        },
+      ],
     },
     resolve: {
-      extensions: ['*', '.js', '.ts', '.json']
+      extensions: ['*', '.js', '.ts', '.json'],
     },
     output: {
       path: __dirname + '/build',
-      filename: 'app.js'
-    }
+      filename: 'app.js',
+    },
   },
   {
     entry: './src/renderer/index.tsx',
@@ -32,37 +32,37 @@ const config: webpack.Configuration[] = [
         {
           test: /\.(ts|tsx)$/,
           exclude: /node_modules/,
-          loader: 'ts-loader'
+          loader: 'ts-loader',
         },
         {
           test: /\.css$/,
-          loaders: ['style-loader', 'css-loader']
+          loaders: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|svg|jpg|gif)$/,
-          use: ['file-loader']
-        }
-      ]
+          use: ['file-loader'],
+        },
+      ],
     },
     resolve: {
-      extensions: ['*', '.js', '.jsx', '.ts', '.tsx', '.css', '.json', '.svg']
+      extensions: ['*', '.js', '.jsx', '.ts', '.tsx', '.css', '.json', '.svg'],
     },
     output: {
       path: __dirname + '/build',
       publicPath: './',
-      filename: 'bundle.js'
+      filename: 'bundle.js',
     },
     devServer: {
       contentBase: __dirname + '/build/',
-      compress: true
+      compress: true,
     },
     plugins: [
       new HtmlWebPackPlugin({
         filename: 'index.html',
-        template: 'src/renderer/index.html'
-      })
-    ]
-  }
+        template: 'src/renderer/index.html',
+      }),
+    ],
+  },
 ];
 
 export default config;

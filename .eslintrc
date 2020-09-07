@@ -1,0 +1,12 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": "airbnb-typescript-prettier",
+  "rules": {
+    "no-bitwise": "off",
+    "prefer-template": "off"
+  }
+}

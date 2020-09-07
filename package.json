@@ -1,7 +1,7 @@
 {
-  "name": "electron-react-typescript-boilerplate",
+  "name": "calceus",
   "version": "0.0.1",
-  "description": "A minimal template for creating electron applications using the react framework along with TypeScript.",
+  "description": "Open-source checkout automation",
   "main": "./src/main/index.ts",
   "scripts": {
     "webpack-dev": "webpack --mode development",
@@ -10,19 +10,19 @@
     "webpack-prod": "webpack --mode production",
     "build-win": "electron-builder build --win -c.extraMetadata.main=./build/app.js --publish never"
   },
-  "author": "Armin Dizdarevic",
+  "author": "zedd3v",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arevi/electron-react-typescript-boilerplate"
+    "url": "https://github.com/zedd3v/calceus"
   },
   "build": {
-    "appId": "com.arevi.electron-react-typescript-boilerplate",
+    "appId": "com.zeddev.calceus",
     "files": [
       "build/*",
       "node_modules/**/*"
     ],
-    "productName": "Electron React TypeScript Boilerplate"
+    "productName": "Calceus"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.3",
@@ -33,21 +33,23 @@
     "@types/webpack-dev-server": "^3.11.0",
     "cross-env": "^7.0.2",
     "css-loader": "^4.2.2",
-    "electron": "^10.1.1",
     "electron-builder": "^22.8.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-typescript-prettier": "^3.1.0",
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.4.1",
+    "prettier": "^2.1.1",
     "prop-types": "^15.7.2",
     "style-loader": "^1.2.1",
     "ts-loader": "^8.0.3",
     "ts-node": "^9.0.0",
-    "tslint": "^6.1.3",
     "typescript": "^4.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "electron": "^10.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

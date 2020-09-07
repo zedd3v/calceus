@@ -1,9 +1,9 @@
 import { app, BrowserWindow } from 'electron';
 
 let mainWindow: BrowserWindow;
-const isDev: boolean = process.env.ELECTRON_ENV == 'dev';
+const isDev: boolean = process.env.ELECTRON_ENV === 'dev';
 
-//Render main window w/ configuration settings
+// Render main window w/ configuration settings
 const renderWindow = async () => {
   mainWindow = new BrowserWindow({
     width: 1200,
@@ -13,8 +13,8 @@ const renderWindow = async () => {
     center: true,
     webPreferences: {
       nodeIntegration: true,
-      devTools: isDev
-    }
+      devTools: isDev,
+    },
   });
 
   // Depending on the environment the frontend will either load from the react server or the static html file

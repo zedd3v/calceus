@@ -1,22 +1,10 @@
-# Electron-React-TypeScript-Boilerplate - Documentation
-
-![Screenshot](https://i.imgur.com/T7cILWQ.png 'Screenshot')
-
-This template serves as the basis for creating extensible electron applications using the React frontend framework with TypeScript, all transpiled by webpack allowing for the latest ECMAScript standards to be used.
-
-This template is minimal, by design, reducing the overhead required for customization. Out of the box, it will feature minimal pages that need to be modified. This results in less time being spent cleaning up unused portions of the code, and less time to production.
-
-<p align="center">
-<a href="https://travis-ci.com/github/arevi/electron-react-typescript-boilerplate">
-<img src="https://travis-ci.com/arevi/electron-react-typescript-boilerplate.svg?branch=master">
-</a>
-</p>
+# Calceus - First full open-spurce autocheckout bot
 
 ## Getting Started
 
 | Command       | Effect                                                                   |
 | ------------- | ------------------------------------------------------------------------ |
-| `npm install` | Install all of the required node modules and dependencies for the project |
+| `yarn install` | Install all of the required node modules and dependencies for the project |
 
 ## Development Commands
 
