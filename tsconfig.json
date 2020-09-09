@@ -5,6 +5,7 @@
     "module": "CommonJS",
     "target": "esnext",
     "jsx": "react",
+    "esModuleInterop": true,
     "allowJs": true,
     "moduleResolution": "node"
   },

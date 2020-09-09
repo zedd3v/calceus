@@ -1,4 +1,4 @@
-# Calceus - First full open-spurce autocheckout bot
+# Calceus - First full open-source autocheckout bot
 
 ## Getting Started
 

@@ -1,0 +1,1 @@
+start cmd.exe /k "npm run webpack-dev & start cmd.exe /k npm run react-dev && start cmd.exe /k npm run electron-dev"

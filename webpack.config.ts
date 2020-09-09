@@ -1,7 +1,7 @@
-import * as HtmlWebPackPlugin from 'html-webpack-plugin';
-import * as webpack from 'webpack';
+import HtmlWebPackPlugin from 'html-webpack-plugin';
+import { Configuration } from 'webpack';
 
-const config: webpack.Configuration[] = [
+const config: Configuration[] = [
   {
     entry: './src/main/index.ts',
     name: 'electron',
